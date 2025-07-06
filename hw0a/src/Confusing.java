@@ -1,10 +1,11 @@
 /**
- * Exercise sourced from Practice-It by the University of Washington.
- * Original problems available at: https://practiceit.cs.washington.edu/
+ * 练习题来源：华盛顿大学 Practice-It。
+ * 原题链接：https://practiceit.cs.washington.edu/
  *
  * @author Erik Kizior
  */
 
+// TODO: 下列程序的输出是什么？
 // TODO: What is the output of the following program?
 public class Confusing {
     public static void method1() {
@@ -31,5 +32,15 @@ public class Confusing {
 /* Before running the code, type your answer below.
 
 TODO: Write output here
-
+I am method 1.
+I am method 1.
+I am method 2.
+I am method 3.
+I am method 1.
+I am method 1.
+I am method 2.
+I am method 1.
+I am method 2.
+I am method 3.
+I am method 1.
 Then, click the green play button to check your work. */

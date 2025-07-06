@@ -1,6 +1,6 @@
 /**
- * Exercise sourced from Practice-It by the University of Washington.
- * Original problems available at: https://practiceit.cs.washington.edu/
+ * 练习题来源：华盛顿大学 Practice-It。
+ * 原题链接：https://practiceit.cs.washington.edu/
  *
  * @author Erik Kizior
  */
@@ -18,6 +18,7 @@ public class IfElseMystery1 {
         System.out.println(z + " " + y);
     }
 
+    // TODO: 下面每个调用会输出什么？
     // TODO: For each call below, indicate what output is produced.
     public static void main(String[] args) {
         ifElseMystery1(3, 20);
@@ -27,8 +28,11 @@ public class IfElseMystery1 {
     }
 }
 
-/* Before running the code, type your answer below.
+/* 在运行代码之前，请在下方写出你的答案。
 
-TODO: Write output here
-
+TODO: 在此写出输出结果
+13 21
+5 6
+5 6
+7 11
 Then, click the green play button to check your work. */
