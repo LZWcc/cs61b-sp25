@@ -9,4 +9,5 @@ public interface List61B<Item> {
     public Item getLast();
     public Item get(int i);
     public Item removeLast();
+    public int size();
 }

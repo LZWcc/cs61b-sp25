@@ -71,4 +71,8 @@ public class AList<Item> implements List61B<Item> {
         size -= 1;
         return itemToReturn;
     }
+
+    public int size() {
+        return size;
+    }
 }
