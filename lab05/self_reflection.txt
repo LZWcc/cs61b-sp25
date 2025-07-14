@@ -3,19 +3,23 @@ You must answer at least 4 questions, but the remaining ones are optional. The m
 ArrayDeque61B:
 
 Q: Give an example of at least one idea from the staff solution that would have made your solution better (if any).
-
+    skip.
 A: 
 
-Q: What's something you felt proud of in your code, if anything?
+Q: 你遇到过最烦人的bug是什么？你是怎么修复的？你用了调试器吗？是通过添加特殊案例修复的吗？
+有没有做过“修改并祈祷”（就是做个小改动然后希望AG通过）？
 
-A:
+A: 对于Node类的书写, 需要 item, next和prev, 初始化LinkedListDeque61B时, 需要把sentinel.next和sentinel.prev全部指向自身
 
-Q: What's something that was particularly inelegant in your code, if anything?
+   实现addFirst时, 先要调用sentinel.next.prev, 使下一个节点指向newNode, 再调用sentinel.next指向新节点
+   不能先调用sentinel.next = newNode, 否则sentinel.next.prev的指向会出错
 
-A:
+Q: 如何找到链表的末尾?
+
+A: 使用while (p.next != sentinel) 而不是 p.next != null, 因为这是一个循环指向的结构
 
 Q: What did you learn by talking to your partner about writing ArrayDeque61B?
-
+    编写returnCorrectIndex, 第一次调用先获取当前位置的索引, 即 tmp = nextFirst + 1, 第二次调用获取需要位置的下标, tmp + needed
 A:
 
 Q: What do you wish you would have known before writing ArrayDeque61B, if anything?
@@ -30,25 +34,23 @@ A:
 
 LinkedListDeque61B:
 
-Q: Give an example of at least one idea from the staff solution that would have made your solution better (if any).
-
-A: 
-
 Q: What's something you felt proud of in your code, if anything?
 
-A:
+A: returnCorrectIndex
 
 Q: What's something that was particularly inelegant in your code, if anything?
 
 A:
 
-Q: What did you learn by talking to your partner about writing LinkedListDeque61B?
-
-A:
-
 Q: What do you wish you would have known before writing LinkedListDeque61B, if anything?
 
-A:
+A: public ArrayDeque61B() {
+           items = (T[]) new Object[8];
+           size = 0;
+           nextFirst = items.length - 1;
+           nextLast = 0;
+       }
+     初始化构造, nextFirst指向末尾, nextLast指向开头, 每次调用nextFirst时, 指针前移, 调用nextLast时, 指针后移
 
 Q: If you wrote LinkedListDeque61B again, what would you do differently, if anything?
 
