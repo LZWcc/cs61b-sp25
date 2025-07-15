@@ -1,0 +1,24 @@
+Please enter desired length of each string: 50
+
+Enter # strings to insert into the maps: zyqzyqzyqzqyzqyzyqzyqzyqzyqzyqzyqzyqzqyzqyzyqzyqzyqzyq
+Please enter a positive integer: 1000
+class ULLMap: 0.01 sec
+class BSTMap: 0.00 sec
+Java's Built-in TreeMap: 0.00 sec
+Java's Built-in HashMap: 0.00 sec
+Would you like to try more timed-tests? (y/n)y
+
+Enter # strings to insert into the maps: zyqzyqzyqzqyzqyzyqzyqzyqzyqzyqzyqzyqzqyzqyzyqzyqzyqzyq
+Please enter a positive integer: 10000
+class ULLMap: 0.29 sec
+class BSTMap: 0.00 sec
+Java's Built-in TreeMap: 0.00 sec
+Java's Built-in HashMap: 0.00 sec
+Would you like to try more timed-tests? (y/n)y
+
+Enter # strings to insert into the maps: zyq
+Please enter a positive integer: 100000
+--Stack Overflow -- couldn't add 100000 strings of length 50.
+class BSTMap: 0.05 sec
+Java's Built-in TreeMap: 0.05 sec
+Java's Built-in HashMap: 0.03 sec

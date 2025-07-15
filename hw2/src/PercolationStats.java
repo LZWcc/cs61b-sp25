@@ -46,8 +46,12 @@ public class PercolationStats {
         int trials = 100, gridSize = 50;
         PercolationStats ps = new PercolationStats(gridSize, trials);
         System.out.printf("Grid Size: %d x %d | Number of Trials: %d%n", gridSize, gridSize, trials);
+        // 网格大小：%d x %d | 试验次数：%d
         System.out.printf("The mean percolation threshold is %.2f%n", ps.mean());
+        // 渗透阈值的平均值是 %.2f
         System.out.printf("The standard deviation of the percolation threshold is %.2f.%n", ps.stddev());
+        // 渗透阈值的标准差是 %.2f
         System.out.printf("The 95%% confidence interval is [%.3f, %.3f].%n", ps.confidenceLow(), ps.confidenceHigh());
+        // 95%% 置信区间是 [%.3f, %.3f]
     }
 }
