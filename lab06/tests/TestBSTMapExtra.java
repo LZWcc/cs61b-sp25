@@ -6,10 +6,12 @@ import org.junit.Test;
 import static com.google.common.truth.Truth.assertThat;
 
 /** Tests of optional parts of lab 6. */
+/** Lab 6可选部分的测试。 */
 public class TestBSTMapExtra {
 
     /*
      * Sanity test for keySet, only here because it's optional
+     * keySet的基本测试，仅在此处因为它是可选的
      */
     @Test
     public void sanityKeySetTest() {
@@ -20,22 +22,31 @@ public class TestBSTMapExtra {
             values.add("hi" + i);
         }
         assertThat(b.size()).isEqualTo(455); //keys are there
+                                            //键存在
         Set<String> keySet = b.keySet();
         assertThat(values).containsExactlyElementsIn(keySet).inOrder();
         assertThat(keySet).containsExactlyElementsIn(values).inOrder();
     }
 
     /* Remove Test
+     * 移除测试
      *
      * Note for testRemoveRoot:
+     * testRemoveRoot的注意事项：
      *
      * Just checking that c is gone (perhaps incorrectly)
+     * 仅检查c是否消失（可能不正确）
      * assumes that remove is BST-structure preserving.
+     * 假设remove保持BST结构。
      *
      * More exhaustive tests could be done to verify
+     * 可以进行更全面的测试来验证
      * implementation of remove, but that would require doing
+     * remove的实现，但这需要做
      * things like checking for inorder vs. preorder swaps,
+     * 诸如检查中序与前序交换等事情，
      * and is unnecessary in this simple BST implementation.
+     * 在这个简单的BST实现中是不必要的。
      */
     @Test
     public void testRemoveRoot() {
@@ -56,7 +67,9 @@ public class TestBSTMapExtra {
     }
 
     /* Remove Test 2
+     * 移除测试2
      * test the 3 different cases of remove
+     * 测试remove的3种不同情况
      */
     @Test
     public void testRemoveThreeCases() {
@@ -83,8 +96,11 @@ public class TestBSTMapExtra {
     }
 
     /* Remove Test 3
+     * 移除测试3
      *  Checks that remove works correctly on root nodes
-     *  when the node has only 1 or 0 children on either side. */
+     *  检查remove在根节点上是否正确工作
+     *  when the node has only 1 or 0 children on either side.
+     *  当节点在任一侧只有1个或0个子节点时。 */
     @Test
     public void testRemoveRootEdge() {
         BSTMap<Character, Integer> rightChild = new BSTMap<>();
