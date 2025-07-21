@@ -7,7 +7,10 @@ import java.util.HashSet;
 import java.util.Set;
 import static com.google.common.truth.Truth.assertThat;
 
-/** Tests of optional parts of lab 8. */
+/** Tests of optional parts of lab 8.
+ *
+ * 实验8可选部分的测试。
+ */
 public class TestMyHashMapExtra {
 
     @Test
@@ -29,6 +32,8 @@ public class TestMyHashMapExtra {
 
     /**
      * Remove Test 2
+     *
+     * 删除测试2
      * Test the 3 different cases of remove
      */
     @Test

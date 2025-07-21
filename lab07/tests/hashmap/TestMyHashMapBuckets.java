@@ -16,12 +16,20 @@ import static hashmap.MyHashMapFactory.createBucketedMap;
  * Revised for 2016 by Josh Hug
  * Revised for 2021 by Neil Kulkarni
  * Revised for 2023 by Noah Adhikari
+ *
+ * 测试由Brendan Hu编写，2015年春季
+ * 2016年由Josh Hug修订
+ * 2021年由Neil Kulkarni修订
+ * 2023年由Noah Adhikari修订
  */
 
 /**
  * This class tests MyHashMap with different bucket types
  * imported from java.util. You should pass the tests in
  * TestMyHashMap before attempting these tests.
+ *
+ * 此类使用从java.util导入的不同桶类型测试MyHashMap。
+ * 在尝试这些测试之前，你应该通过TestMyHashMap中的测试。
  */
 public class TestMyHashMapBuckets {
 

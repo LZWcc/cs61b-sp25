@@ -1,0 +1,27 @@
+1. BucketsSpeedTest
+测试结果显示：插入 114514 个长度为 10 的随机字符串时，不同桶类型的 MyHashMap 插入耗时如下：
+
+- ArrayList：0.11 秒
+- LinkedList：0.08 秒
+- HashSet：0.08 秒
+- Stack：0.06 秒
+- ArrayDeque：0.06 秒
+
+- 数据量较大时，桶类型的性能差异开始显现。
+- Stack 和 ArrayDeque 作为桶时插入最快，ArrayList 最慢。
+- 这与各集合的插入复杂度有关：Stack/ArrayDeque 末尾插入快，ArrayList 可能有扩容和移动元素的开销。
+- HashSet 插入也较快，因为其本身是基于哈希的集合。
+
+结论:
+- 桶类型会影响 MyHashMap 的插入性能，尤其在数据量大时。
+- Stack 和 ArrayDeque 适合作为高效桶类型，ArrayList 在大数据量下性能略逊。
+
+2. InsertInorderSpeedTest
+ULLMap 插入 50000 个字符串耗时 8.05 秒
+MyHashMap 插入 50000 个字符串耗时 0.05 秒
+Java 自带 HashMap 插入 50000 个字符串耗时 0.03 秒
+
+分析：
+ULLMap 是链表实现，插入和查找都需要线性遍历，时间复杂度 O(N)，所以速度最慢。
+MyHashMap 和 Java HashMap 都是基于哈希表，插入和查找平均时间复杂度 O(1)，速度远快于链表。
+Java 自带的 HashMap 经过高度优化，比自实现的 MyHashMap 更快。
